@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Favorite Memories ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Cute Font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤</span>
+    <span>💖</span>
+    <span>🌸</span>
+    <span>✨</span>
+    <span>💕</span>
+    <span>🦋</span>
+</div>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<h1>HAPPY BIRTHDAY PU!!</h1>
+
+<p>
+Sana pu Happy Happy ikaw sa iyong ka arawann
+</p>
+
+<p>
+I LOVEEE YOUUUU, BABBYYYY
+</p>
+
+</header>
+
+<!-- ================= SCRAPBOOK ================= -->
+
+<section id="galleryPage">
+
+<div class="gallery">
+
+<!-- MEMORY 1 -->
+<div class="polaroid" onclick="openMemory('memory1')">
+
+<div class="tape"></div>
+
+<img src="1 (33).jpg">
+
+<h3>Senior Highschool Moments </h3>
+
+</div>
+
+<!-- MEMORY 2 -->
+<div class="polaroid" onclick="openMemory('memory2')">
+
+<div class="tape"></div>
+
+<img src="1 (119).jpg">
+
+<h3>Our First Date</h3>
+
+</div>
+
+<!-- MEMORY 3 -->
+<div class="polaroid" onclick="openMemory('memory3')">
+
+<div class="tape"></div>
+
+<img src="1 (122).jpg">
+
+<h3>Your Baby Pictures</h3>
+
+</div>
+
+<!-- MEMORY 4 -->
+<div class="polaroid" onclick="openMemory('memory4')">
+
+<div class="tape"></div>
+
+<img src="1 (115).jpg">
+
+<h3>NYAPII BIRTHDAYYY</h3>
+
+</div>
+
+<!-- MEMORY 5 -->
+<div class="polaroid" onclick="openMemory('memory5')">
+
+<div class="tape"></div>
+
+<img src="1 (117).jpg">
+
+<h3>NAMNAMNAM Moments</h3>
+
+</div>
+
+<!-- MEMORY 6 -->
+<div class="polaroid" onclick="openMemory('memory6')">
+
+<div class="tape"></div>
+
+<img src="1 (73).jpg">
+
+<h3>Our Dates</h3>
+
+</div>
+
+<!-- MEMORY 7 -->
+<div class="polaroid" onclick="openMemory('memory7')">
+
+<div class="tape"></div>
+
+<img src="1 (99).jpg">
+
+<h3>KAPIBAYAAAA</h3>
+
+</div>
+
+<!-- MEMORY 8 -->
+<div class="polaroid" onclick="openMemory('memory8')">
+
+<div class="tape"></div>
+
+<img src="1 (25).jpg">
+
+<h3>Our Photobooth</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MEMORY PAGE ================= -->
+
+<section id="memoryPage">
+
+<button class="backBtn" onclick="closeMemory()">
+
+⬅ Back
+
+</button>
+
+<div class="memoryCard">
+
+<h2 id="memoryTitle"></h2>
+
+<p id="memoryMessage"></p>
+
+<div class="slideshow">
+
+<button class="slideBtn" onclick="previousPhoto()">
+
+❮
+
+</button>
+
+<img id="slideImage">
+
+<video id="slideVideo" controls style="display:none;">
+    <source id="videoSource" src="" type="video/mp4">
+</video>
+
+<button class="slideBtn" onclick="nextPhoto()">
+
+❯
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="bgMusic" loop>
+
+<source src="ny.mp3" type="audio/mpeg">
+
+</audio>
+
+<button id="musicBtn">
+
+🎵 Music
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

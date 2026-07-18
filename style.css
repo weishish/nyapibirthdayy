@@ -1,0 +1,673 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8efe5;
+
+    overflow-x:hidden;
+
+    color:#5b3b2e;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+
+    text-align:center;
+
+    padding:50px 20px 30px;
+
+}
+
+header h1{
+
+    font-family:'Pacifico',cursive;
+
+    font-size:60px;
+
+    color:#ff6b8a;
+
+    text-shadow:2px 2px white;
+
+}
+
+header p{
+
+    margin-top:15px;
+
+    font-size:20px;
+
+    color:#7a5c4e;
+
+}
+
+/* ===========================
+FLOATING HEARTS
+=========================== */
+
+.hearts{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+}
+
+.hearts span{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    font-size:25px;
+
+    animation:floatUp 12s linear infinite;
+
+}
+
+.hearts span:nth-child(1){
+left:10%;
+animation-delay:0s;
+}
+
+.hearts span:nth-child(2){
+left:28%;
+animation-delay:2s;
+}
+
+.hearts span:nth-child(3){
+left:45%;
+animation-delay:4s;
+}
+
+.hearts span:nth-child(4){
+left:62%;
+animation-delay:6s;
+}
+
+.hearts span:nth-child(5){
+left:80%;
+animation-delay:8s;
+}
+
+.hearts span:nth-child(6){
+left:92%;
+animation-delay:10s;
+}
+
+@keyframes floatUp{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ===========================
+GALLERY
+=========================== */
+
+.gallery{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:45px;
+
+    padding:20px 0 60px;
+
+}
+
+/* ===========================
+POLAROID
+=========================== */
+
+.polaroid{
+
+    background:white;
+
+    padding:15px 15px 60px;
+
+    border-radius:5px;
+
+    position:relative;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.polaroid:hover{
+
+    transform:translateY(-8px) scale(1.04) rotate(0deg);
+
+}
+
+.polaroid:nth-child(1){
+
+transform:rotate(-8deg);
+
+}
+
+.polaroid:nth-child(2){
+
+transform:rotate(6deg);
+
+}
+
+.polaroid:nth-child(3){
+
+transform:rotate(-5deg);
+
+}
+
+.polaroid:nth-child(4){
+
+transform:rotate(7deg);
+
+}
+
+.polaroid:nth-child(5){
+
+transform:rotate(-7deg);
+
+}
+
+.polaroid:nth-child(6){
+
+transform:rotate(5deg);
+
+}
+
+.polaroid img{
+
+    width:100%;
+
+    height:270px;
+
+    object-fit:cover;
+
+    border-radius:4px;
+
+}
+
+.polaroid h3{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    font-size:20px;
+
+    color:#7a4d4d;
+
+}
+
+/* ===========================
+TAPE
+=========================== */
+
+.tape{
+
+    width:80px;
+
+    height:28px;
+
+    background:rgba(255,255,210,.7);
+
+    position:absolute;
+
+    top:-12px;
+
+    left:50%;
+
+    transform:translateX(-50%) rotate(-4deg);
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:4px;
+
+}
+
+/* ===========================
+MEMORY PAGE
+=========================== */
+
+#memoryPage{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:linear-gradient(135deg,#fff7f0,#ffeef5);
+
+    overflow:auto;
+
+    padding:40px;
+
+    z-index:999;
+
+    animation:fadeIn .5s;
+
+}
+
+/* ===========================
+MEMORY CARD
+=========================== */
+
+.memoryCard{
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+/* ===========================
+TITLE & MESSAGE
+=========================== */
+
+#memoryTitle{
+
+    font-family:'Pacifico',cursive;
+
+    color:#ff6b8a;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+#memoryMessage{
+
+    font-size:20px;
+
+    color:#6a5a5a;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+SLIDESHOW
+=========================== */
+
+.slideshow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+#slideImage{
+
+    width:75%;
+
+    max-width:700px;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border:12px solid white;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+
+    animation:zoom .4s;
+
+}
+
+/* ===========================
+BUTTONS
+=========================== */
+
+.slideBtn{
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff9bb3;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.slideBtn:hover{
+
+    background:#ff6b8a;
+
+    transform:scale(1.1);
+
+}
+
+.backBtn{
+
+    background:#ff6b8a;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.backBtn:hover{
+
+    background:#ff4f74;
+
+}
+
+/* ===========================
+MUSIC BUTTON
+=========================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    background:#ff9bb3;
+
+    color:white;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 22px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.05);
+
+    background:#ff6b8a;
+
+}
+
+/* ===========================
+ANIMATIONS
+=========================== */
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.85);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header h1{
+
+    font-size:42px;
+
+}
+
+header p{
+
+    font-size:17px;
+
+}
+
+.gallery{
+
+    gap:25px;
+
+}
+
+.polaroid img{
+
+    height:220px;
+
+}
+
+.polaroid h3{
+
+    font-size:18px;
+
+}
+
+.memoryCard{
+
+    padding:20px;
+
+}
+
+#memoryTitle{
+
+    font-size:32px;
+
+}
+
+#memoryMessage{
+
+    font-size:17px;
+
+}
+
+.slideshow{
+
+    flex-direction:column;
+
+}
+
+#slideImage{
+
+    width:80%;
+    max-width:700px;
+    height: auto;
+
+}
+
+.slideBtn{
+
+    width:100px;
+
+    height:50px;
+
+    font-size:24px;
+
+}
+
+#musicBtn{
+
+    bottom:15px;
+
+    right:15px;
+
+    font-size:16px;
+
+    padding:12px 18px;
+
+}
+
+}
+
+.sticker{
+    position:fixed;
+    font-size:35px;
+    pointer-events:none;
+    opacity:.8;
+}
+
+.flower1{
+    top:30px;
+    left:30px;
+}
+
+.flower2{
+    top:100px;
+    right:40px;
+}
+
+.flower3{
+    bottom:80px;
+    left:50px;
+}
+
+.flower4{
+    bottom:40px;
+    right:60px;
+}
+
+.flower5{
+    top:50%;
+    left:20px;
+}
+
+#slideVideo{
+
+    display:none;
+
+    width:75%;
+
+    max-width:700px;
+
+    height:500px;
+
+    object-fit:cover;
+
+    border:12px solid white;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
+
+}
